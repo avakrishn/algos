@@ -38,7 +38,7 @@ var numJewelsInStones = function(J, S) {
         4. return counter
     */
     let counter = 0;
-    let jewelsObj = {}
+    let jewelsObj = {};
     
     for(let i = 0; i< J.length; i++){
         jewelsObj[J[i]] = true;
@@ -53,3 +53,10 @@ var numJewelsInStones = function(J, S) {
     return counter;
     
 };
+
+//------------------------------------Tests------------------------------
+
+
+console.log(numJewelsInStones("aA", "aAAbbbb") === 3); //true
+console.log(numJewelsInStones("z", "ZZ") === 0); //true
+console.log(numJewelsInStones("abc", "AaBBCc") === 2); //true
