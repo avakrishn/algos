@@ -59,6 +59,38 @@ var reverseList = function(head) {
     return head;
 };
 
+//------------------------Recursive Solution
+
+let reverseListRecursive = function (head) {
+    let currentNode = head;
+    if(currentNode === null){
+        return head;
+    }
+    if(currentNode.next === null){
+        return head;
+    }
+    let nextNode = currentNode.next;
+    currentNode.next = null;
+    
+    let reverseNodes = function (previousNode, node){
+        // console.log(node);
+        if(node.next === null){
+            node.next = previousNode;
+            return head = node; // need to set head = node;
+            
+        }
+        
+        let nodeNext = node.next;
+        node.next = previousNode;
+        reverseNodes(node, nodeNext);
+   
+    }
+    
+    reverseNodes(currentNode, nextNode);
+    return head;
+    
+}
+
 
 //----------------------Tests
 
@@ -78,8 +110,20 @@ current.next = new ListNode(4);
 current = current.next;
 current.next = new ListNode(5);
 
-console.log("Test 1", JSON.stringify(reverseList(newListNode))); 
+console.log("Test 1 Iterative", JSON.stringify(reverseList(newListNode))); 
 
+
+let newListNodeR = new ListNode(1);
+let currentR = newListNodeR;
+currentR.next = new ListNode(2);
+currentR = currentR.next;
+currentR.next = new ListNode(3);
+currentR = currentR.next;
+currentR.next = new ListNode(4);
+currentR = currentR.next;
+currentR.next = new ListNode(5);
+
+console.log("Test 1 Recursive", JSON.stringify(reverseListRecursive(newListNodeR)));
 
 /*
  *
@@ -91,7 +135,13 @@ let secondListNode = new ListNode(1);
 let secondCurrent = secondListNode;
 secondCurrent.next = new ListNode(2);
 
-console.log("Test 2", JSON.stringify(reverseList(secondListNode))); 
+console.log("Test 2 Iterative", JSON.stringify(reverseList(secondListNode))); 
+
+let secondListNodeR = new ListNode(1);
+let secondCurrentR = secondListNodeR;
+secondCurrentR.next = new ListNode(2);
+
+console.log("Test 2 Recursive", JSON.stringify(reverseListRecursive(secondListNodeR))); 
 
 /*
  *
@@ -101,7 +151,10 @@ console.log("Test 2", JSON.stringify(reverseList(secondListNode)));
 */
 
 let emptyListNode = new ListNode();
-console.log("Test 3", JSON.stringify(reverseList(emptyListNode)));
+console.log("Test 3 Iterative", JSON.stringify(reverseList(emptyListNode)));
+
+let emptyListNodeR = new ListNode();
+console.log("Test 3 Recursive", JSON.stringify(reverseListRecursive(emptyListNodeR)));
 
 
 
