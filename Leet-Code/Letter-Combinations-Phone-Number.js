@@ -27,22 +27,22 @@
         return [];
     }
     // all possible letters corresponsing to each number on keypad
-  let letters = {"0": "0", "1": "1", "2": ["a", "b", "c"], "3": ["d","e", "f"], "4":["g", "h", "i"], "5":["j", "k", "l"], "6": ["m", "n", "o"],"7":["p", "q", "r", "s"], "8":["t", "u", "v"], "9":["w", "x", "y", "z"]};
+  var letters = {"0": "0", "1": "1", "2": ["a", "b", "c"], "3": ["d","e", "f"], "4":["g", "h", "i"], "5":["j", "k", "l"], "6": ["m", "n", "o"],"7":["p", "q", "r", "s"], "8":["t", "u", "v"], "9":["w", "x", "y", "z"]};
 
-  let permutations = [];  // the output - all word permutations
+  var permutations = [];  // the output - all word permutations
   // word = each word permutation 
   // strIndex = index in str
   // letterIndex = index in the values of the letter properties
   function recurse (word, strIndex, letterIndex) {
       // letterOptions = the different latin letter possibilities for a specific letter character in str (ex. for "2" letterOptions = ["A", "B", "C"])
-      let letter = str[strIndex];
+      var letter = str[strIndex];
       // console.log(letter);
-      let letterOptions = letters[letter]; 
+      var letterOptions = letters[letter]; 
         // reached the end of the string
         if(strIndex === str.length){
           return permutations.push(word);
         } else if (letterOptions && letterIndex < letterOptions.length){
-          let currentPerm = word;
+          var currentPerm = word;
           word += letterOptions[letterIndex];
           recurse(word, strIndex+1, 0);
           recurse(currentPerm, strIndex, letterIndex+1);
@@ -56,3 +56,10 @@
   return permutations;
 };
 
+//----------------------------Tests
+
+console.log("Letter Combinations for 23", letterCombinations("23"));
+console.log("Letter Combinations for 4147",letterCombinations("4147"));
+console.log("Letter Combinations for 2",letterCombinations("2"));
+console.log("Letter Combinations for 797",letterCombinations("797"));
+console.log("Letter Combinations for '' ",letterCombinations(""));
