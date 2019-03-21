@@ -91,9 +91,12 @@ var mergeTwoLists = function(l1, l2) {
 
 //-----------------Tests
 
-const args = process.argv.slice(2)
-var l1Array = JSON.parse(args[0]);
-var l2Array = JSON.parse(args[1]);
+//---Using process.argv command line arguments
+var args, l1Array, l2Array, l1, l2, mergedList;
+
+args = process.argv.slice(2);
+
+
 
 var createList = function(valuesArray){
     if(valuesArray.length === 0){
@@ -113,7 +116,7 @@ var createList = function(valuesArray){
 
 var valuesOfList = function(list){
     if(list == null){
-        return [null];
+        return [];
     }
 
     let valuesArr = [];
@@ -125,7 +128,59 @@ var valuesOfList = function(list){
     return valuesArr;
 }
 
-var l1 = createList(l1Array);
-var l2 = createList(l2Array)
-var mergedList = mergeTwoLists(l1, l2);
-console.log(valuesOfList(mergedList));
+
+if(args.length > 0){
+    l1Array = JSON.parse(args[0]);
+    l2Array = JSON.parse(args[1]);
+
+    l1 = createList(l1Array);
+    l2 = createList(l2Array)
+    mergedList = mergeTwoLists(l1, l2);
+
+    console.log(`l1 = [${l1Array}] `, `l2 = [${l2Array}] `, "output =", valuesOfList(mergedList));
+}
+ 
+
+
+//--- Predetermined Tests
+
+// TEST ONE
+l1Array = [];
+l2Array = [];
+l1 = createList(l1Array);
+l2 = createList(l2Array)
+mergedList = mergeTwoLists(l1, l2);
+console.log(`l1 = [${l1Array}] `, `l2 = [${l2Array}] `, "output =", valuesOfList(mergedList)); // []
+
+// TEST TWO
+l1Array = [1,2,3];
+l2Array = [1,2,3];
+l1 = createList(l1Array);
+l2 = createList(l2Array)
+mergedList = mergeTwoLists(l1, l2);
+console.log(`l1 = [${l1Array}] `, `l2 = [${l2Array}] `, "output =", valuesOfList(mergedList)); // [1,1,2,2,3,3]
+
+// TEST THREE
+l1Array = [];
+l2Array = [1,2,3];
+l1 = createList(l1Array);
+l2 = createList(l2Array)
+mergedList = mergeTwoLists(l1, l2);
+console.log(`l1 = [${l1Array}] `, `l2 = [${l2Array}] `, "output =", valuesOfList(mergedList)); // [1,2,3]
+
+//TEST FOUR
+l1Array = [1,2,3];
+l2Array = [1,2,3];
+l1 = createList(l1Array);
+l2 = createList(l2Array)
+mergedList = mergeTwoLists(l1, l2);
+console.log(`l1 = [${l1Array}] `, `l2 = [${l2Array}] `, "output =", valuesOfList(mergedList)); // [1,1,2,2,3,3]
+
+// TEST FIVE
+l1Array = [1,2,3,4,7];
+l2Array = [2,4,8];
+l1 = createList(l1Array);
+l2 = createList(l2Array)
+mergedList = mergeTwoLists(l1, l2);
+console.log(`l1 = [${l1Array}] `, `l2 = [${l2Array}] `, "output =", valuesOfList(mergedList)); // [ 1, 2, 2, 3, 4, 4, 7, 8 ]
+
