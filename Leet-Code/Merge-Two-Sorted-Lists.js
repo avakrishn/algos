@@ -28,6 +28,12 @@
  * Space: O(1) Constant
  * 
  */
+
+function ListNode(val) {
+    this.val = val;
+    this.next = null;
+}
+
 /**
  * @param {ListNode} l1
  * @param {ListNode} l2
@@ -82,3 +88,44 @@ var mergeTwoLists = function(l1, l2) {
     
     
 };
+
+//-----------------Tests
+
+const args = process.argv.slice(2)
+var l1Array = JSON.parse(args[0]);
+var l2Array = JSON.parse(args[1]);
+
+var createList = function(valuesArray){
+    if(valuesArray.length === 0){
+        return null;
+    }
+    var currentList = new ListNode(valuesArray[0]);
+    var head = currentList;
+
+    for(var i = 1; i < valuesArray.length; i++){
+        currentList.next = new ListNode(valuesArray[i]);
+        currentList = currentList.next;
+    }
+
+    return head;
+
+}
+
+var valuesOfList = function(list){
+    if(list == null){
+        return [null];
+    }
+
+    let valuesArr = [];
+    let current = list;
+    while(current !== null){
+        valuesArr.push(current.val);
+        current = current.next;
+    }
+    return valuesArr;
+}
+
+var l1 = createList(l1Array);
+var l2 = createList(l2Array)
+var mergedList = mergeTwoLists(l1, l2);
+console.log(valuesOfList(mergedList));
