@@ -99,12 +99,79 @@ function bitArraySort(arr) {
 
 //----------------TESTS
 
-let arr = [0, 3, 4, 6, 8, 9];
-let target = 7;
+// let arr = [0, 3, 4, 6, 8, 9];
+// let target = 7;
 
-console.log(sortedTwoSum(arr,target));
+// console.log(sortedTwoSum(arr,target));
 
 
+
+/**
+ * Merge Two Sorted Arrays
+ * Given two sorted arrays of integers, combine the values into one sorted array?
+ * 
+ *  Parameters
+ *  Input: arr1, arr2 {Array, Array}
+ *  Output: {Array}
+ *  
+ *
+ *  Constraints
+ *  Time: O(N+M)
+ *  Auxiliary Space: O(N+M)
+ * 
+ * 
+ * Input: [1,3,5], [2,4,6,8,10]
+ * Output: [1,2,3,4,5,6,8,10]
+ * See if you can solve this in O(N+M) time and O(N+M) auxiliary space.
+ * 
+ *    a
+ * [1,3,5]
+ * 
+ * b
+ * [2,4,6,8,10]
+ * 
+ * 
+ */
+
+function mergeTwoSortedArrays(arr1, arr2){
+    if(arr1.length < 1){
+        return arr2;
+    }else if(arr2.length < 1){
+        return arr1;
+    }
+
+    let a = 0;
+    let b = 0;
+    let result = [];
+
+    while ((a + b) < (arr1.length + arr2.length)){
+        if(arr1[a] <= arr2[b]){
+            result.push(arr1[a]);
+            a++;
+        }else{
+            result.push(arr2[b]);
+            b++;
+        }
+    } 
+
+    return result;
+}
+
+//---------------TESTS
+
+let arr1 = [1,3,5];
+let arr2 = [2,4,6,8,10];
+let arr3 = [1,2,3];
+let arr4 = [3,4,5];
+let arr5 = [1];
+let arr6 = [1];
+let arr7 = [];
+console.log(mergeTwoSortedArrays(arr1, arr2));
+console.log(mergeTwoSortedArrays(arr3, arr4));
+console.log(mergeTwoSortedArrays(arr5, arr6));
+console.log(mergeTwoSortedArrays(arr5, arr7));
+console.log(mergeTwoSortedArrays(arr7, arr1));
+console.log(mergeTwoSortedArrays(arr7, arr7));
 
 
 
@@ -147,3 +214,22 @@ console.log(sortedTwoSum(arr,target));
 
     We could also try to create a hashtable or map to speed up the search or lookup time to find a match. But this would lead to a O(N) amount of auxiliary space.
  */
+
+
+//-----------Merge Two Sorted Arrays
+/*
+ * Brute Force
+
+    The brute force approach would be, to concatenate the two arrays into a larger array and perform a sort on the combined array. However the time complexity would be quasilinear O((N+M)log(N+M)) if we used a efficient sorting method such as mergesort.
+
+* Hint 1
+
+    Given that the arrays are sorted, we know the lowest element must either be the first item of array one or the first item of array two.
+
+* Hint 2
+
+    If we have two pointers: one that starts at the beginning of array1, and one pointer at the beginning of array2, we can place the smaller value into a results array.
+    What happens if the value in array1 is smaller? What happens if the value in array2 is smaller? What happens if the values are equal?
+    What happens if one of the pointers reaches the very end of its array?
+ */
+
