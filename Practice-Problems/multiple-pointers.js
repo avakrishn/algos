@@ -50,3 +50,29 @@ console.log(bitArraySort(arr));
 console.log(bitArraySort(arr2));
 console.log(bitArraySort(arr3));
 console.log(bitArraySort(arr4));
+
+
+
+
+
+
+
+
+
+
+//--------------------------------------HINTS
+
+//-----------Sort a Bit Array
+
+/**
+ * Hint 1
+
+    Since we want to sort it in-place we should be modifying the values change changing its position rather than creating a new array. Additionally because there are only two possible values, and we know that the 0’s will have to be on the left, and the ones have to be on the right. How can we identify elements to swap?
+
+ * Hint 2
+
+    If we have two pointers: one that starts on the very left, and one on the very right, then we can iterate inward.
+    We need to iterate the left pointer until it hits a 1
+    Then decrement the right pointer to the left until it reaches a 0
+    Once we find them we will do a swap.
+ */
