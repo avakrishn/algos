@@ -18,9 +18,3 @@ The vowels does not include the letter "y".
 */
 
 
-//------------------CODE
-
-/*
-Time: O(N)
-Space: O(N)
-*/
