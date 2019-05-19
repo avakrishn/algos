@@ -155,3 +155,4 @@ const testArray = [testOne, testTwo, testThree, testFour, testFive, testSix, tes
 for(let test of testArray){
     console.log(test);
 }
+
