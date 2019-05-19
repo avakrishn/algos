@@ -1,3 +1,5 @@
+'use strict';
+
 /*
     509. Fibonacci Number (Easy)
 
