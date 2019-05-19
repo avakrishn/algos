@@ -19,7 +19,7 @@ Level: Easy
 */
 
 
-//------------------------Constraints & Edge Cases:
+//------------------------Constraints and Edge Cases:
 
 /*
     - Searching for TWO numbers withing array to add up to k

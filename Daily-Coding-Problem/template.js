@@ -11,7 +11,7 @@ Level:
 */
 
 
-//------------------------Constraints & Edge Cases:
+//------------------------Constraints and Edge Cases:
 
 /*
     -
