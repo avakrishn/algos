@@ -1,3 +1,5 @@
+'use strict';
+
 /*
     70. Climbing Stairs (Easy)
 
