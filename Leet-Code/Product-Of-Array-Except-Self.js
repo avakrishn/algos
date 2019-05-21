@@ -123,26 +123,18 @@ const runTest = (test, index) => {
     return error;
 }
 
+const productExceptSelfTest = (testNumber, array, expectedString, expectedLength) =>{
+    const result = productExceptSelf(array);
+    const resultString = JSON.stringify(result);
+    const test = (resultString === expectedString) && (result.length === expectedLength) && (Array.isArray(result));
+    return runTest(test, testNumber);
 
-const testOneResult = productExceptSelf([1, 2, 3, 4, 5]);
-const testOneString = JSON.stringify(testOneResult);
-const testOneAssertion = (testOneResult.length === 5) && Array.isArray(testOneResult) && (testOneString === '[120,60,40,30,24]');
-const testOne = runTest(testOneAssertion, 1);
+}
 
-const testTwoResult = productExceptSelf([4]);
-const testTwoString = JSON.stringify(testTwoResult);
-const testTwoAssertion = (testTwoResult.length === 1) && Array.isArray(testTwoResult) && (testTwoString === '[1]');
-const testTwo = runTest(testTwoAssertion, 2);
-
-const testThreeResult = productExceptSelf([3, 2, 1]);
-const testThreeString = JSON.stringify(testThreeResult);
-const testThreeAssertion = (testThreeResult.length === 3) && Array.isArray(testThreeResult) && (testThreeString === '[2,3,6]');
-const testThree = runTest(testThreeAssertion, 3);
-
-const testFourResult = productExceptSelf([1, 2, 3, 4]);
-const testFourString = JSON.stringify(testFourResult);
-const testFourAssertion = (testFourResult.length === 4) && Array.isArray(testFourResult) && (testFourString === '[24,12,8,6]');
-const testFour = runTest(testFourAssertion, 4);
+const testOne = productExceptSelfTest(1, [1, 2, 3, 4, 5], '[120,60,40,30,24]', 5);
+const testTwo = productExceptSelfTest(2, [4], '[1]', 1);
+const testThree = productExceptSelfTest(3, [3, 2, 1], '[2,3,6]', 3);
+const testFour = productExceptSelfTest(4, [1, 2, 3, 4], '[24,12,8,6]', 4);
     
 
 const testArray = [testOne, testTwo, testThree, testFour];
