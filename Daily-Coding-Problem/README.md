@@ -7,6 +7,8 @@
 
 * [Problem 2: Product of Array Elements except current Index (Uber)](solutions/problem-002-product-array-except-self.js)
 
+* [Problem 3: Serialize and Deserialize a Binary Tree (Google)](solutions/problem-003-serialize-deserialize-binary-tree.js)
+
 
 
 ## All Problems:
