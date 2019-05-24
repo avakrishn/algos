@@ -1,3 +1,4 @@
+'use strict';
 /*
     
     563. Binary Tree Tilt (Easy)
