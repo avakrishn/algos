@@ -2,7 +2,7 @@
 //--------------------------------------- Problem
 
 /*
-    Return Child Heirarchy of Graph
+    Return Child Hierarchy of Graph
     
     Given an array of objects (list of vertices) as the input representing a Grpah/ Tree
 
