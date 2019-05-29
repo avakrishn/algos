@@ -1,8 +1,6 @@
 'use strict';
 const assert = require('assert');
 
-//------------------------Problem 4:
-
 /*
 
     41. First Missing Positive Number (Hard)
