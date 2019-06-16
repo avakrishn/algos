@@ -104,6 +104,7 @@ class Node {
 function univalSubtreeCounter(root) {
   let univalCounter = 0;
   function compareSubtrees(current) {
+    console.log(current);
     if (current === null) {
       return true;
     }
@@ -204,12 +205,23 @@ rootFour.right.left = new Node('b');
 rootFour.right.right = new Node('b');
 rootFour.right.right.right = new Node('b');
 
+/*
+treeFive
+
+null Node
+
+Output = 1
+
+*/
+const rootFive = new Node();
+
 const testOne = runTest(univalSubtreeCounter(rootOne) === 5, 1);
 const testTwo = runTest(univalSubtreeCounter(rootTwo) === 1, 2);
 const testThree = runTest(univalSubtreeCounter(rootThree) === 3, 3);
 const testFour = runTest(univalSubtreeCounter(rootFour) === 5, 4);
+const testFive = runTest(univalSubtreeCounter(rootFive) === 1, 5);
 
-const testArray = [testOne, testTwo, testThree, testFour];
+const testArray = [testOne, testTwo, testThree, testFour, testFive];
 
 for (let test of testArray) {
   console.log(test);
