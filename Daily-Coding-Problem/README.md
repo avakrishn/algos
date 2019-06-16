@@ -3,25 +3,28 @@
 ### Solutions to <a href= "https://www.dailycodingproblem.com">Daily Coding Problems</a>
 
 ## List:
-* [Problem 1: Two Sum Target In Array (Google)](solutions/problem-001-two-sum-target-in-array.js)
 
-* [Problem 2: Product of Array Elements except current Index (Uber)](solutions/problem-002-product-array-except-self.js)
+- [Problem 1: Two Sum Target In Array (Google)](solutions/problem-001-two-sum-target-in-array.js)
 
-* [Problem 3: Serialize and Deserialize a Binary Tree (Google)](solutions/problem-003-serialize-deserialize-binary-tree.js)
+- [Problem 2: Product of Array Elements except current Index (Uber)](solutions/problem-002-product-array-except-self.js)
 
-* [Problem 4: First Missing Positive Number (Stripe)](solutions/problem-004-first-missing-positive.js)
+- [Problem 3: Serialize and Deserialize a Binary Tree (Google)](solutions/problem-003-serialize-deserialize-binary-tree.js)
 
-* [Problem 5: Implement Functional Programming Functions car and cdr (Jane Street)](solutions/problem-005-functional-car-cdr.js)
+- [Problem 4: First Missing Positive Number (Stripe)](solutions/problem-004-first-missing-positive.js)
 
+- [Problem 5: Implement Functional Programming Functions car and cdr (Jane Street)](solutions/problem-005-functional-car-cdr.js)
+
+- [Problem 6: XOR Doubly Linked List (Google)](solutions/problem-006-XOR-linked-list.js)
+
+- [Problem 7: Number of Ways to Decode (Facebook)](solutions/problem-007-number-ways-to-decode.js)
 
 ## All Problems:
 
 ---
 
 ### Problem 1:
+
 > This problem was recently asked by Google.
-
-
 
 Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
 
@@ -31,13 +34,11 @@ Bonus: Can you do this in one pass?
 
 > Level: Easy
 
-
 [Problem 1 Solution](solutions/problem-001-two-sum-target-in-array.js)
 
 ---
 
 ### Problem 2:
-
 
 > This problem was asked by Uber.
 
@@ -49,13 +50,11 @@ Follow-up: what if you can't use division?
 
 > Level: Hard
 
-
 [Problem 2 Solution](solutions/problem-002-product-array-except-self.js)
 
 ---
 
 ### Problem 3:
-
 
 > This problem was asked by Google.
 
@@ -64,10 +63,10 @@ Given the root to a binary tree, implement serialize(root), which serializes the
 For example, given the following Node class
 
 class Node:
-    def __init__(self, val, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+def **init**(self, val, left=None, right=None):
+self.val = val
+self.left = left
+self.right = right
 The following test should pass:
 
 node = Node('root', Node('left', Node('left.left')), Node('right'))
@@ -75,13 +74,11 @@ assert deserialize(serialize(node)).left.left.val == 'left.left'
 
 > Level: Medium
 
-
 [Problem 3 Solution](solutions/problem-003-serialize-deserialize-binary-tree.js)
 
 ---
 
 ### Problem 4:
-
 
 > This problem was asked by Stripe.
 
@@ -92,7 +89,6 @@ For example, the input [3, 4, -1, 1] should give 2. The input [1, 2, 0] should g
 You can modify the input array in-place.
 
 > Level: Hard
-
 
 [Problem 4 Solution](solutions/problem-004-first-missing-positive.js)
 
@@ -119,19 +115,21 @@ Implement car and cdr.
 
 > Level: Medium
 
-
-
-[Problem 5 Solution)](solutions/problem-005-functional-car-cdr.js)
+[Problem 5 Solution](solutions/problem-005-functional-car-cdr.js)
 
 ---
 
 ### Problem 6:
 
+> This problem was asked by Google.
 
+An XOR linked list is a more memory efficient doubly linked list. Instead of each node holding next and prev fields, it holds a field named both, which is an XOR of the next node and the previous node. Implement an XOR linked list; it has an add(element) which adds the element to the end, and a get(index) which returns the node at index.
 
+If using a language that has no pointers (such as Python), you can assume you have access to get_pointer and dereference_pointer functions that converts between nodes and memory addresses.
 
+> Level: Hard
 
-[Problem 6 Solution)]()
+[Problem 6 Solution](solutions/problem-006-XOR-linked-list.js)
 
 ---
 
@@ -145,10 +143,8 @@ For example, the message '111' would give 3, since it could be decoded as 'aaa',
 
 You can assume that the messages are decodable. For example, '001' is not allowed.
 
-
 > Level: Medium
 
-
-[Problem 7 Solution)](solutions/problem-007-number-ways-to-decode.js)
+[Problem 7 Solution](solutions/problem-007-number-ways-to-decode.js)
 
 ---
