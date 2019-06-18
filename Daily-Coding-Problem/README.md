@@ -22,6 +22,8 @@
 
 - [Problem 9: Largest Sum of Non-adjacent Numbers (Airbnb))](solutions/problem-009-largest-sum-non-adjacent-numbers.js)
 
+- [Problem 10: Job Scheduler (Apple)](solutions/problem-010-job-scheduler.js)
+
 ## All Problems:
 
 ---
@@ -193,3 +195,17 @@ Follow-up: Can you do this in O(N) time and constant space?
 > Level: Hard
 
 [Problem 9 Solution](solutions/problem-009-largest-sum-non-adjacent-numbers.js)
+
+---
+
+### Problem 10:
+
+> This problem was asked by Apple.
+
+Implement a job scheduler which takes in a function f and an integer n, and calls f after n milliseconds.
+
+> Level: Medium
+
+[Problem 10 Solution](solutions/problem-010-job-scheduler.js)
+
+---
