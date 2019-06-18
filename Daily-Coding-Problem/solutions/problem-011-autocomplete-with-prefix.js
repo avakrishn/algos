@@ -1,7 +1,7 @@
 'use strict';
 const assert = require('assert');
 
-//------------------------Problem:
+//------------------------Problem 11:
 
 /*
 
@@ -102,8 +102,7 @@ class Trie {
   findAllWordsFromPrefix(prefix) {
     let current = this.root;
     let arr = [];
-    let i = 0;
-    for (i; i < prefix.length; i++) {
+    for (let i = 0; i < prefix.length; i++) {
       if (!current.next[prefix[i]]) {
         return [];
       }
