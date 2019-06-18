@@ -26,7 +26,7 @@
 
   Time: O(N)
   Space: O(N)
-  Tabulation (Dynamic Programming)
+  Tabulation (Dynamic Programming) using an Array
 
 */
 
@@ -47,6 +47,27 @@ var rob = function(nums) {
   return arr[nums.length - 1];
 };
 
+/*
+
+  Time: O(N)
+  Space: O(1)
+  Tabulation (Dynamic Programming) using 3 pointers
+
+*/
+
+var robOptimized = function(nums) {
+  let onePrev = -Infinity;
+  let twoPrev = -Infinity;
+  let current = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    current = Math.max(onePrev, twoPrev + nums[i], nums[i]);
+    [onePrev, twoPrev] = [current, onePrev];
+  }
+
+  return current;
+};
+
 //----------------Tests
 
 console.log(rob([1, 2, 3, 1]) === 4);
@@ -56,3 +77,11 @@ console.log(rob([5, 1, 1, 5]) === 10);
 console.log(rob([]) === 0);
 console.log(rob([1, 2]) === 2);
 console.log(rob([10]) === 10);
+
+console.log(robOptimized([1, 2, 3, 1]) === 4);
+console.log(robOptimized([2, 7, 9, 3, 1]) === 12);
+console.log(robOptimized([2, 4, 6, 2, 5]) === 13);
+console.log(robOptimized([5, 1, 1, 5]) === 10);
+console.log(robOptimized([]) === 0);
+console.log(robOptimized([1, 2]) === 2);
+console.log(robOptimized([10]) === 10);
