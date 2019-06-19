@@ -28,6 +28,8 @@
 
 - [Problem 12: Climb Staircase (Amazon)](solutions/problem-012-climb-staircase.js)
 
+- [Problem 13: Longest Substring of K distinct characters (Amazon)](solutions/problem-013-longest-substring-k-distinct-chars.js)
+
 ## All Problems:
 
 ---
@@ -248,3 +250,19 @@ What if, instead of being able to climb 1 or 2 steps at a time, you could climb 
 > Level: Hard
 
 [Problem 12 Solution](solutions/problem-012-climb-staircase.js)
+
+---
+
+### Problem 13:
+
+> This problem was asked by Amazon.
+
+Given an integer k and a string s, find the length of the longest substring that contains at most k distinct characters.
+
+For example, given s = "abcba" and k = 2, the longest substring with k distinct characters is "bcb".
+
+> Level: Hard
+
+[Problem 13 Solution](solutions/problem-013-longest-substring-k-distinct-chars.js)
+
+---
