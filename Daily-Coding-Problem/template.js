@@ -10,7 +10,6 @@ Level:
 
 */
 
-
 //------------------------Constraints and Edge Cases:
 
 /*
@@ -18,7 +17,6 @@ Level:
     -
 
 */
-
 
 //------------------------Inputs and Outputs:
 
@@ -37,13 +35,11 @@ Level:
 
 */
 
-
 //------------------------Approach:
 
 /*
 
 */
-
 
 //------------------------CODE:
 
@@ -52,7 +48,6 @@ Level:
     Space: 
 */
 
-
 //------------------------Modification:
 
 /*
@@ -60,22 +55,18 @@ Level:
     Space: 
 */
 
-
 //------------------------TESTS:
 
 const runTest = (test, index) => {
-    const error = assert(test, `Test ${index}: Incorrect Result`);
-    if(!error) return `Test ${index}: ${true}`;
-    return error;
-}
+  const error = assert(test, `Test ${index}: Incorrect Result`);
+  if (!error) return `Test ${index}: ${true}`;
+  return error;
+};
 
-const testOne = runTest("Placeholder", 1);
+const testOne = runTest('Placeholder', 1);
 
 const testArray = [testOne];
 
-for(let test of testArray){
-    console.log(test);
+for (let test of testArray) {
+  console.log(test);
 }
-
-
-

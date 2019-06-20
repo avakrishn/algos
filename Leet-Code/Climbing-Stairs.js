@@ -41,112 +41,94 @@
  * @return {number}
  */
 
-
 //----Memoization Way 1
 
 var climbStairsMemo1 = function(n) {
-    // let counter = 0;
-    let memo = {};
-    
-    var climb = function (i){
-        if(i > n){
-            return 0;
-        }
-        if(i === n){
-            return 1;
-        }
-        if(memo[i] > 0){
-            return memo[i];
-        }
-        
-        return memo[i] = climb(i+1) + climb(i+2);
-      
-        
-    }
-    
-    climb(0);
-    return memo[0];
-};
+  // let counter = 0;
+  let memo = {};
 
+  var climb = function(i) {
+    if (i > n) {
+      return 0;
+    }
+    if (i === n) {
+      return 1;
+    }
+    if (memo[i] > 0) {
+      return memo[i];
+    }
+
+    return (memo[i] = climb(i + 1) + climb(i + 2));
+  };
+
+  climb(0);
+  return memo[0];
+};
 
 // Memoization Way 2
 
 var climbStairsMemo2 = function(n) {
+  let memo = {};
 
-    let memo = {};
-    
-    var climb = function (i){
-        if(i < 0){
-            return 0;
-        }
-        if(i === 0){
-            return 1;
-        }
-        if(memo[i] > 0){
-            return memo[i];
-        }
-        
-        return memo[i] = climb(i-1) + climb(i-2);
-      
-        
+  var climb = function(i) {
+    if (i < 0) {
+      return 0;
     }
-    
-    climb(n);
-    return memo[n];
-};
+    if (i === 0) {
+      return 1;
+    }
+    if (memo[i] > 0) {
+      return memo[i];
+    }
 
+    return (memo[i] = climb(i - 1) + climb(i - 2));
+  };
+
+  climb(n);
+  return memo[n];
+};
 
 // Tabulation Way 1
 
 var climbStairsTab1 = function(n) {
+  let tab = new Array(n + 1).fill(0);
+  tab[0] = 1;
 
-    let tab = new Array(n+1).fill(0);
-    tab[0] = 1;
-    
-    for (let i = 1; i <= n; i++){
-        if(tab[i-1] !== undefined){
-            tab[i] += tab[i-1];
-        }
-        if(tab[i-2] !== undefined){
-            tab[i] += tab[i-2];
-        }
-        
-        
+  for (let i = 1; i <= n; i++) {
+    if (tab[i - 1] !== undefined) {
+      tab[i] += tab[i - 1];
     }
-    
-    return tab[n];
+    if (tab[i - 2] !== undefined) {
+      tab[i] += tab[i - 2];
+    }
+  }
+
+  return tab[n];
 };
 
 // Tabulation Way 2
 
 var climbStairsTab2 = function(n) {
-    if(n < 3){
-        return n;
-    }
+  if (n < 3) {
+    return n;
+  }
 
-    let tab = new Array(n+1).fill(0);
-    tab[0] = 1;
-    tab[1] = 1;
-    tab[2] = 2;
-    
-    for (let i = 3; i <= n; i++){
-        if(tab[i-1] !== undefined){
-            tab[i] += tab[i-1];
-        }
-        if(tab[i-2] !== undefined){
-            tab[i] += tab[i-2];
-        }
-        
-        
+  let tab = new Array(n + 1).fill(0);
+  tab[0] = 1;
+  tab[1] = 1;
+  tab[2] = 2;
+
+  for (let i = 3; i <= n; i++) {
+    if (tab[i - 1] !== undefined) {
+      tab[i] += tab[i - 1];
     }
-    
-    return tab[n];
+    if (tab[i - 2] !== undefined) {
+      tab[i] += tab[i - 2];
+    }
+  }
+
+  return tab[n];
 };
-
-
-
-
-
 
 //--------------------TESTS
 
