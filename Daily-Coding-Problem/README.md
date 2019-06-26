@@ -30,6 +30,8 @@
 
 - [Problem 13: Longest Substring of K distinct characters (Amazon)](solutions/problem-013-longest-substring-k-distinct-chars.js)
 
+- [Problem 14: Use Monte Carlo Method to Find Value of Pi (Google)](solutions/problem-014-monte-carlo-method-pi.js)
+
 ## All Problems:
 
 ---
@@ -264,5 +266,19 @@ For example, given s = "abcba" and k = 2, the longest substring with k distinct 
 > Level: Hard
 
 [Problem 13 Solution](solutions/problem-013-longest-substring-k-distinct-chars.js)
+
+---
+
+### Problem 14:
+
+> This problem was asked by Google.
+
+The area of a circle is defined as πr^2. Estimate π to 3 decimal places using a Monte Carlo method.
+
+Hint: The basic equation of a circle is x2 + y2 = r2.
+
+> Level: Medium
+
+[Problem 14 Solution](solutions/problem-014-monte-carlo-method-pi.js)
 
 ---
