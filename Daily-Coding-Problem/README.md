@@ -32,6 +32,8 @@
 
 - [Problem 14: Use Monte Carlo Method to Find Value of Pi (Google)](solutions/problem-014-monte-carlo-method-pi.js)
 
+- [Problem 15: Random Element From Stream (Facebook)](solutions/problem-015-random-element-stream.js)
+
 ## All Problems:
 
 ---
@@ -282,3 +284,13 @@ Hint: The basic equation of a circle is x2 + y2 = r2.
 [Problem 14 Solution](solutions/problem-014-monte-carlo-method-pi.js)
 
 ---
+
+### Problem 15:
+
+> This problem was asked by Facebook.
+
+Given a stream of elements too large to store in memory, pick a random element from the stream with uniform probability.
+
+> Level: Medium
+
+[Problem 15 Solution](solutions/problem-015-random-element-stream.js)
