@@ -4,41 +4,45 @@
 
 ## List:
 
-- [Problem 1: Two Sum Target In Array (Google)](solutions/problem-001-two-sum-target-in-array.js)
+- [Problem 1: Two Sum Target In Array (Google)](#problem-1) | [Solution](solutions/problem-001-two-sum-target-in-array.js)
 
-- [Problem 2: Product of Array Elements except current Index (Uber)](solutions/problem-002-product-array-except-self.js)
+- [Problem 2: Product of Array Elements except current Index (Uber)](#problem-2) | [Solution](solutions/problem-002-product-array-except-self.js)
 
-- [Problem 3: Serialize and Deserialize a Binary Tree (Google)](solutions/problem-003-serialize-deserialize-binary-tree.js)
+- [Problem 3: Serialize and Deserialize a Binary Tree (Google)](#problem-3) | [Solution](solutions/problem-003-serialize-deserialize-binary-tree.js)
 
-- [Problem 4: First Missing Positive Number (Stripe)](solutions/problem-004-first-missing-positive.js)
+- [Problem 4: First Missing Positive Number (Stripe)](#problem-4) | [Solution](solutions/problem-004-first-missing-positive.js)
 
-- [Problem 5: Implement Functional Programming Functions car and cdr (Jane Street)](solutions/problem-005-functional-car-cdr.js)
+- [Problem 5: Implement Functional Programming Functions car and cdr (Jane Street)](#problem-5) | [Solution](solutions/problem-005-functional-car-cdr.js)
 
-- [Problem 6: XOR Doubly Linked List (Google)](solutions/problem-006-XOR-linked-list.js)
+- [Problem 6: XOR Doubly Linked List (Google)](#problem-6) | [Solution](solutions/problem-006-XOR-linked-list.js)
 
-- [Problem 7: Number of Ways to Decode (Facebook)](solutions/problem-007-number-ways-to-decode.js)
+- [Problem 7: Number of Ways to Decode (Facebook)](#problem-7) | [Solution](solutions/problem-007-number-ways-to-decode.js)
 
-- [Problem 8: Number of Unival Subtrees (Google)](solutions/problem-008-number-of-unival-subtrees.js)
+- [Problem 8: Number of Unival Subtrees (Google)](#problem-8) | [Solution](solutions/problem-008-number-of-unival-subtrees.js)
 
-- [Problem 9: Largest Sum of Non-adjacent Numbers (Airbnb))](solutions/problem-009-largest-sum-non-adjacent-numbers.js)
+- [Problem 9: Largest Sum of Non-adjacent Numbers (Airbnb)](#problem-9) | [Solution](solutions/problem-009-largest-sum-non-adjacent-numbers.js)
 
-- [Problem 10: Job Scheduler (Apple)](solutions/problem-010-job-scheduler.js)
+- [Problem 10: Job Scheduler (Apple)](#problem-10) | [Solution](solutions/problem-010-job-scheduler.js)
 
-- [Problem 11: Autocomplete with Prefix (Twitter)](solutions/problem-011-autocomplete-with-prefix.js)
+- [Problem 11: Autocomplete with Prefix (Twitter)](#problem-11) | [Solution](solutions/problem-011-autocomplete-with-prefix.js)
 
-- [Problem 12: Climb Staircase (Amazon)](solutions/problem-012-climb-staircase.js)
+- [Problem 12: Climb Staircase (Amazon)](#problem-12) | [Solution](solutions/problem-012-climb-staircase.js)
 
-- [Problem 13: Longest Substring of K distinct characters (Amazon)](solutions/problem-013-longest-substring-k-distinct-chars.js)
+- [Problem 13: Longest Substring of K distinct characters (Amazon)](#problem-13) | [Solution](solutions/problem-013-longest-substring-k-distinct-chars.js)
 
-- [Problem 14: Use Monte Carlo Method to Find Value of Pi (Google)](solutions/problem-014-monte-carlo-method-pi.js)
+- [Problem 14: Use Monte Carlo Method to Find Value of Pi (Google)](#problem-14) | [Solution](solutions/problem-014-monte-carlo-method-pi.js)
 
-- [Problem 15: Random Element From Stream (Facebook)](solutions/problem-015-random-element-stream.js)
+- [Problem 15: Random Element From Stream (Facebook)](#problem-15) | [Solution](solutions/problem-015-random-element-stream.js)
 
-- [Problem 16: Ecommerce Record and Get Last Ids (Twitter)](solutions/problem-016-record-get-last-ids.js)
+- [Problem 16: Ecommerce Record and Get Last Ids (Twitter)](#problem-16) | [Solution](solutions/problem-016-record-get-last-ids.js)
+
+- [Problem 17: Longest Absolute File Path (Google)](#problem-17) | [Solution](solutions/problem-017-longest-absolute-file-path.js)
 
 ## All Problems:
 
 ---
+
+<a name="problem-1"></a>
 
 ### Problem 1:
 
@@ -317,5 +321,52 @@ You should be as efficient with time and space as possible.
 > Level: Easy
 
 - [Problem 16 Solution](solutions/problem-016-record-get-last-ids.js)
+
+---
+
+### Problem 17:
+
+> This problem was asked by Google.
+
+Suppose we represent our file system by a string in the following manner:
+
+The string `"dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext"` represents:
+
+```
+dir
+    subdir1
+    subdir2
+        file.ext
+```
+
+The directory `dir` contains an empty sub-directory `subdir1` and a sub-directory `subdir2` containing a file `file.ext`.
+
+The string `"dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext"` represents:
+
+```
+dir
+    subdir1
+        file1.ext
+        subsubdir1
+    subdir2
+        subsubdir2
+            file2.ext
+```
+
+The directory `dir` contains two sub-directories `subdir1` and `subdir2`. `subdir1` contains a file `file1.ext` and an empty second-level sub-directory `subsubdir1`. `subdir2` contains a second-level sub-directory `subsubdir2` containing a file `file2.ext`.
+
+We are interested in finding the longest (number of characters) absolute path to a file within our file system. For example, in the second example above, the longest absolute path is `"dir/subdir2/subsubdir2/file2.ext"`, and its length is 32 (not including the double quotes).
+
+Given a string representing the file system in the above format, return the length of the longest absolute path to a file in the abstracted file system. If there is no file in the system, return 0.
+
+Note:
+
+The name of a file contains at least a period and an extension.
+
+The name of a directory or sub-directory will not contain a period.
+
+> Level: Hard
+
+- [Problem 17 Solution](solutions/problem-017-longest-absolute-file-path.js)
 
 ---
