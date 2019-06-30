@@ -38,6 +38,8 @@
 
 - [Problem 17: Longest Absolute File Path (Google)](#problem-17) | [Solution](solutions/problem-017-longest-absolute-file-path.js)
 
+- [Problem 18: ()](#problem-18) | [Solution](solutions/problem-018-.js)
+
 ## All Problems:
 
 ---
@@ -60,6 +62,8 @@ Bonus: Can you do this in one pass?
 
 ---
 
+<a name="problem-2"></a>
+
 ### Problem 2:
 
 > This problem was asked by Uber.
@@ -75,6 +79,8 @@ Follow-up: what if you can't use division?
 [Problem 2 Solution](solutions/problem-002-product-array-except-self.js)
 
 ---
+
+<a name="problem-3"></a>
 
 ### Problem 3:
 
@@ -100,6 +106,8 @@ assert deserialize(serialize(node)).left.left.val == 'left.left'
 
 ---
 
+<a name="problem-4"></a>
+
 ### Problem 4:
 
 > This problem was asked by Stripe.
@@ -115,6 +123,8 @@ You can modify the input array in-place.
 [Problem 4 Solution](solutions/problem-004-first-missing-positive.js)
 
 ---
+
+<a name="problem-5"></a>
 
 ### Problem 5:
 
@@ -141,6 +151,8 @@ Implement car and cdr.
 
 ---
 
+<a name="problem-6"></a>
+
 ### Problem 6:
 
 > This problem was asked by Google.
@@ -154,6 +166,8 @@ If using a language that has no pointers (such as Python), you can assume you ha
 [Problem 6 Solution](solutions/problem-006-XOR-linked-list.js)
 
 ---
+
+<a name="problem-7"></a>
 
 ### Problem 7:
 
@@ -170,6 +184,8 @@ You can assume that the messages are decodable. For example, '001' is not allowe
 [Problem 7 Solution](solutions/problem-007-number-ways-to-decode.js)
 
 ---
+
+<a name="problem-8"></a>
 
 ### Problem 8:
 
@@ -198,6 +214,8 @@ For example, the following tree has 5 unival subtrees:
 
 ---
 
+<a name="problem-9"></a>
+
 ### Problem 9:
 
 > This problem was asked by Airbnb.
@@ -214,6 +232,8 @@ Follow-up: Can you do this in O(N) time and constant space?
 
 ---
 
+<a name="problem-10"></a>
+
 ### Problem 10:
 
 > This problem was asked by Apple.
@@ -225,6 +245,8 @@ Implement a job scheduler which takes in a function f and an integer n, and call
 [Problem 10 Solution](solutions/problem-010-job-scheduler.js)
 
 ---
+
+<a name="problem-11"></a>
 
 ### Problem 11:
 
@@ -241,6 +263,8 @@ Hint: Try preprocessing the dictionary into a more efficient data structure to s
 [Problem 11 Solution](solutions/problem-011-autocomplete-with-prefix.js)
 
 ---
+
+<a name="problem-12"></a>
 
 ### Problem 12:
 
@@ -263,6 +287,8 @@ What if, instead of being able to climb 1 or 2 steps at a time, you could climb 
 
 ---
 
+<a name="problem-13"></a>
+
 ### Problem 13:
 
 > This problem was asked by Amazon.
@@ -276,6 +302,8 @@ For example, given s = "abcba" and k = 2, the longest substring with k distinct 
 [Problem 13 Solution](solutions/problem-013-longest-substring-k-distinct-chars.js)
 
 ---
+
+<a name="problem-14"></a>
 
 ### Problem 14:
 
@@ -291,6 +319,8 @@ Hint: The basic equation of a circle is x2 + y2 = r2.
 
 ---
 
+<a name="problem-15"></a>
+
 ### Problem 15:
 
 > This problem was asked by Facebook.
@@ -302,6 +332,8 @@ Given a stream of elements too large to store in memory, pick a random element f
 [Problem 15 Solution](solutions/problem-015-random-element-stream.js)
 
 ---
+
+<a name="problem-16"></a>
 
 ### Problem 16:
 
@@ -323,6 +355,8 @@ You should be as efficient with time and space as possible.
 - [Problem 16 Solution](solutions/problem-016-record-get-last-ids.js)
 
 ---
+
+<a name="problem-17"></a>
 
 ### Problem 17:
 
@@ -368,5 +402,15 @@ The name of a directory or sub-directory will not contain a period.
 > Level: Hard
 
 - [Problem 17 Solution](solutions/problem-017-longest-absolute-file-path.js)
+
+---
+
+<a name="problem-18"></a>
+
+### Problem 18:
+
+> Level:
+
+- [Problem 18 Solution](solutions/problem-018-.js)
 
 ---
