@@ -38,7 +38,9 @@
 
 - [Problem 17: Longest Absolute File Path (Google)](#problem-17) | [Solution](solutions/problem-017-longest-absolute-file-path.js)
 
-- [Problem 18: ()](#problem-18) | [Solution](solutions/problem-018-.js)
+- [Problem 18: Sliding Window Max (Google)](#problem-18) | [Solution](solutions/problem-018-sliding-window-max.js)
+
+- [Problem 19: ()](#problem-19) | [Solution](solutions/problem-019-.js)
 
 ## All Problems:
 
@@ -409,8 +411,31 @@ The name of a directory or sub-directory will not contain a period.
 
 ### Problem 18:
 
+> This problem was asked by Google.
+
+Given an array of integers and a number k, where 1 <= k <= length of the array, compute the maximum values of each subarray of length k.
+
+For example, given array = [10, 5, 2, 7, 8, 7] and k = 3, we should get: [10, 7, 8, 8], since:
+
+10 = max(10, 5, 2)
+7 = max(5, 2, 7)
+8 = max(2, 7, 8)
+8 = max(7, 8, 7)
+
+Do this in O(n) time and O(k) space. You can modify the input array in-place and you do not need to store the results. You can simply print them out as you compute them.
+
+> Level: Hard
+
+- [Problem 18 Solution](solutions/problem-018-sliding-window-max.js)
+
+---
+
+<a name="problem-19"></a>
+
+### Problem 19:
+
 > Level:
 
-- [Problem 18 Solution](solutions/problem-018-.js)
+- [Problem 19 Solution](solutions/problem-019-.js)
 
 ---
