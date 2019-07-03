@@ -2,45 +2,47 @@
 
 ### Solutions to <a href= "https://www.dailycodingproblem.com">Daily Coding Problems</a>
 
+<a name="list"></a>
+
 ## List:
 
-- [Problem 1: Two Sum Target In Array (Google)](#problem-1) | [Solution](solutions/problem-001-two-sum-target-in-array.js)
+- [Problem 1: Two Sum Target In Array (Google)](#problem-1) **|** [Solution](solutions/problem-001-two-sum-target-in-array.js)
 
-- [Problem 2: Product of Array Elements except current Index (Uber)](#problem-2) | [Solution](solutions/problem-002-product-array-except-self.js)
+- [Problem 2: Product of Array Elements except current Index (Uber)](#problem-2) **|** [Solution](solutions/problem-002-product-array-except-self.js)
 
-- [Problem 3: Serialize and Deserialize a Binary Tree (Google)](#problem-3) | [Solution](solutions/problem-003-serialize-deserialize-binary-tree.js)
+- [Problem 3: Serialize and Deserialize a Binary Tree (Google)](#problem-3) **|** [Solution](solutions/problem-003-serialize-deserialize-binary-tree.js)
 
-- [Problem 4: First Missing Positive Number (Stripe)](#problem-4) | [Solution](solutions/problem-004-first-missing-positive.js)
+- [Problem 4: First Missing Positive Number (Stripe)](#problem-4) **|** [Solution](solutions/problem-004-first-missing-positive.js)
 
-- [Problem 5: Implement Functional Programming Functions car and cdr (Jane Street)](#problem-5) | [Solution](solutions/problem-005-functional-car-cdr.js)
+- [Problem 5: Implement Functional Programming Functions car and cdr (Jane Street)](#problem-5) **|** [Solution](solutions/problem-005-functional-car-cdr.js)
 
-- [Problem 6: XOR Doubly Linked List (Google)](#problem-6) | [Solution](solutions/problem-006-XOR-linked-list.js)
+- [Problem 6: XOR Doubly Linked List (Google)](#problem-6) **|** [Solution](solutions/problem-006-XOR-linked-list.js)
 
-- [Problem 7: Number of Ways to Decode (Facebook)](#problem-7) | [Solution](solutions/problem-007-number-ways-to-decode.js)
+- [Problem 7: Number of Ways to Decode (Facebook)](#problem-7) **|** [Solution](solutions/problem-007-number-ways-to-decode.js)
 
-- [Problem 8: Number of Unival Subtrees (Google)](#problem-8) | [Solution](solutions/problem-008-number-of-unival-subtrees.js)
+- [Problem 8: Number of Unival Subtrees (Google)](#problem-8) **|** [Solution](solutions/problem-008-number-of-unival-subtrees.js)
 
-- [Problem 9: Largest Sum of Non-adjacent Numbers (Airbnb)](#problem-9) | [Solution](solutions/problem-009-largest-sum-non-adjacent-numbers.js)
+- [Problem 9: Largest Sum of Non-adjacent Numbers (Airbnb)](#problem-9) **|** [Solution](solutions/problem-009-largest-sum-non-adjacent-numbers.js)
 
-- [Problem 10: Job Scheduler (Apple)](#problem-10) | [Solution](solutions/problem-010-job-scheduler.js)
+- [Problem 10: Job Scheduler (Apple)](#problem-10) **|** [Solution](solutions/problem-010-job-scheduler.js)
 
-- [Problem 11: Autocomplete with Prefix (Twitter)](#problem-11) | [Solution](solutions/problem-011-autocomplete-with-prefix.js)
+- [Problem 11: Autocomplete with Prefix (Twitter)](#problem-11) **|** [Solution](solutions/problem-011-autocomplete-with-prefix.js)
 
-- [Problem 12: Climb Staircase (Amazon)](#problem-12) | [Solution](solutions/problem-012-climb-staircase.js)
+- [Problem 12: Climb Staircase (Amazon)](#problem-12) **|** [Solution](solutions/problem-012-climb-staircase.js)
 
-- [Problem 13: Longest Substring of K distinct characters (Amazon)](#problem-13) | [Solution](solutions/problem-013-longest-substring-k-distinct-chars.js)
+- [Problem 13: Longest Substring of K distinct characters (Amazon)](#problem-13) **|** [Solution](solutions/problem-013-longest-substring-k-distinct-chars.js)
 
-- [Problem 14: Use Monte Carlo Method to Find Value of Pi (Google)](#problem-14) | [Solution](solutions/problem-014-monte-carlo-method-pi.js)
+- [Problem 14: Use Monte Carlo Method to Find Value of Pi (Google)](#problem-14) **|** [Solution](solutions/problem-014-monte-carlo-method-pi.js)
 
-- [Problem 15: Random Element From Stream (Facebook)](#problem-15) | [Solution](solutions/problem-015-random-element-stream.js)
+- [Problem 15: Random Element From Stream (Facebook)](#problem-15) **|** [Solution](solutions/problem-015-random-element-stream.js)
 
-- [Problem 16: Ecommerce Record and Get Last Ids (Twitter)](#problem-16) | [Solution](solutions/problem-016-record-get-last-ids.js)
+- [Problem 16: Ecommerce Record and Get Last Ids (Twitter)](#problem-16) **|** [Solution](solutions/problem-016-record-get-last-ids.js)
 
-- [Problem 17: Longest Absolute File Path (Google)](#problem-17) | [Solution](solutions/problem-017-longest-absolute-file-path.js)
+- [Problem 17: Longest Absolute File Path (Google)](#problem-17) **|** [Solution](solutions/problem-017-longest-absolute-file-path.js)
 
-- [Problem 18: Sliding Window Max (Google)](#problem-18) | [Solution](solutions/problem-018-sliding-window-max.js)
+- [Problem 18: Sliding Window Max (Google)](#problem-18) **|** [Solution](solutions/problem-018-sliding-window-max.js)
 
-- [Problem 19: ()](#problem-19) | [Solution](solutions/problem-019-.js)
+- [Problem 19: ()](#problem-19) **|** [Solution](solutions/problem-019-.js)
 
 ## All Problems:
 
@@ -62,6 +64,8 @@ Bonus: Can you do this in one pass?
 
 [Problem 1 Solution](solutions/problem-001-two-sum-target-in-array.js)
 
+[[List]](#list)
+
 ---
 
 <a name="problem-2"></a>
@@ -79,6 +83,8 @@ Follow-up: what if you can't use division?
 > Level: Hard
 
 [Problem 2 Solution](solutions/problem-002-product-array-except-self.js)
+
+[[List]](#list)
 
 ---
 
@@ -106,6 +112,8 @@ assert deserialize(serialize(node)).left.left.val == 'left.left'
 
 [Problem 3 Solution](solutions/problem-003-serialize-deserialize-binary-tree.js)
 
+[[List]](#list)
+
 ---
 
 <a name="problem-4"></a>
@@ -123,6 +131,8 @@ You can modify the input array in-place.
 > Level: Hard
 
 [Problem 4 Solution](solutions/problem-004-first-missing-positive.js)
+
+[[List]](#list)
 
 ---
 
@@ -151,6 +161,8 @@ Implement car and cdr.
 
 [Problem 5 Solution](solutions/problem-005-functional-car-cdr.js)
 
+[[List]](#list)
+
 ---
 
 <a name="problem-6"></a>
@@ -166,6 +178,8 @@ If using a language that has no pointers (such as Python), you can assume you ha
 > Level: Hard
 
 [Problem 6 Solution](solutions/problem-006-XOR-linked-list.js)
+
+[[List]](#list)
 
 ---
 
@@ -184,6 +198,8 @@ You can assume that the messages are decodable. For example, '001' is not allowe
 > Level: Medium
 
 [Problem 7 Solution](solutions/problem-007-number-ways-to-decode.js)
+
+[[List]](#list)
 
 ---
 
@@ -214,6 +230,8 @@ For example, the following tree has 5 unival subtrees:
 
 [Problem 8 Solution](solutions/problem-008-number-of-unival-subtrees.js)
 
+[[List]](#list)
+
 ---
 
 <a name="problem-9"></a>
@@ -232,6 +250,8 @@ Follow-up: Can you do this in O(N) time and constant space?
 
 [Problem 9 Solution](solutions/problem-009-largest-sum-non-adjacent-numbers.js)
 
+[[List]](#list)
+
 ---
 
 <a name="problem-10"></a>
@@ -245,6 +265,8 @@ Implement a job scheduler which takes in a function f and an integer n, and call
 > Level: Medium
 
 [Problem 10 Solution](solutions/problem-010-job-scheduler.js)
+
+[[List]](#list)
 
 ---
 
@@ -263,6 +285,8 @@ Hint: Try preprocessing the dictionary into a more efficient data structure to s
 > Level: Medium
 
 [Problem 11 Solution](solutions/problem-011-autocomplete-with-prefix.js)
+
+[[List]](#list)
 
 ---
 
@@ -287,6 +311,8 @@ What if, instead of being able to climb 1 or 2 steps at a time, you could climb 
 
 [Problem 12 Solution](solutions/problem-012-climb-staircase.js)
 
+[[List]](#list)
+
 ---
 
 <a name="problem-13"></a>
@@ -302,6 +328,8 @@ For example, given s = "abcba" and k = 2, the longest substring with k distinct 
 > Level: Hard
 
 [Problem 13 Solution](solutions/problem-013-longest-substring-k-distinct-chars.js)
+
+[[List]](#list)
 
 ---
 
@@ -319,6 +347,8 @@ Hint: The basic equation of a circle is x2 + y2 = r2.
 
 [Problem 14 Solution](solutions/problem-014-monte-carlo-method-pi.js)
 
+[[List]](#list)
+
 ---
 
 <a name="problem-15"></a>
@@ -332,6 +362,8 @@ Given a stream of elements too large to store in memory, pick a random element f
 > Level: Medium
 
 [Problem 15 Solution](solutions/problem-015-random-element-stream.js)
+
+[[List]](#list)
 
 ---
 
@@ -355,6 +387,8 @@ You should be as efficient with time and space as possible.
 > Level: Easy
 
 - [Problem 16 Solution](solutions/problem-016-record-get-last-ids.js)
+
+[[List]](#list)
 
 ---
 
@@ -405,6 +439,8 @@ The name of a directory or sub-directory will not contain a period.
 
 - [Problem 17 Solution](solutions/problem-017-longest-absolute-file-path.js)
 
+[[List]](#list)
+
 ---
 
 <a name="problem-18"></a>
@@ -428,6 +464,8 @@ Do this in O(n) time and O(k) space. You can modify the input array in-place and
 
 - [Problem 18 Solution](solutions/problem-018-sliding-window-max.js)
 
+[[List]](#list)
+
 ---
 
 <a name="problem-19"></a>
@@ -437,5 +475,7 @@ Do this in O(n) time and O(k) space. You can modify the input array in-place and
 > Level:
 
 - [Problem 19 Solution](solutions/problem-019-.js)
+
+[[List]](#list)
 
 ---
