@@ -16,6 +16,60 @@ const assert = require('assert');
 
 */
 
+//---------------------Inputs and Outputs:
+
+// Input:
+const matrix_1 = [
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9, 10, 11, 12],
+  [13, 14, 15, 16]
+];
+//Output:
+const rotated_matrix_1 = [
+  [2, 3, 4, 8],
+  [1, 7, 11, 12],
+  [5, 6, 10, 16],
+  [9, 13, 14, 15]
+];
+
+// Input:
+const matrix_2 = [
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9, 10, 11, 12],
+  [13, 14, 15, 16]
+];
+//Output:
+const rotated_matrix_2 = [
+  [3, 4, 8, 12],
+  [2, 11, 10, 16],
+  [1, 7, 6, 15],
+  [5, 9, 13, 14]
+];
+
+// Input:
+const matrix_3 = [
+  [1, 2, 3, 4],
+  [7, 8, 9, 10],
+  [13, 14, 15, 16],
+  [19, 20, 21, 22],
+  [25, 26, 27, 28]
+];
+//Output:
+const rotated_matrix_3 = [
+  [28, 27, 26, 25],
+  [22, 9, 15, 19],
+  [16, 8, 21, 13],
+  [10, 14, 20, 7],
+  [4, 3, 2, 1]
+];
+
+// Input:
+const matrix_4 = [[1, 1], [1, 1]];
+//Output:
+const rotated_matrix_4 = [[1, 1], [1, 1]];
+
 //--------------------CODE
 function matrixRotation(matrix, r) {
   //1. figure out row or column is smaller and even
@@ -117,58 +171,8 @@ function matrixRotation(matrix, r) {
   // }
   return final_matrix;
 }
-// Input:
-const matrix_1 = [
-  [1, 2, 3, 4],
-  [5, 6, 7, 8],
-  [9, 10, 11, 12],
-  [13, 14, 15, 16]
-];
-//Output:
-const rotated_matrix_1 = [
-  [2, 3, 4, 8],
-  [1, 7, 11, 12],
-  [5, 6, 10, 16],
-  [9, 13, 14, 15]
-];
 
-// Input:
-const matrix_2 = [
-  [1, 2, 3, 4],
-  [5, 6, 7, 8],
-  [9, 10, 11, 12],
-  [13, 14, 15, 16]
-];
-//Output:
-const rotated_matrix_2 = [
-  [3, 4, 8, 12],
-  [2, 11, 10, 16],
-  [1, 7, 6, 15],
-  [5, 9, 13, 14]
-];
-
-// Input:
-const matrix_3 = [
-  [1, 2, 3, 4],
-  [7, 8, 9, 10],
-  [13, 14, 15, 16],
-  [19, 20, 21, 22],
-  [25, 26, 27, 28]
-];
-//Output:
-const rotated_matrix_3 = [
-  [28, 27, 26, 25],
-  [22, 9, 15, 19],
-  [16, 8, 21, 13],
-  [10, 14, 20, 7],
-  [4, 3, 2, 1]
-];
-
-// Input:
-const matrix_4 = [[1, 1], [1, 1]];
-//Output:
-const rotated_matrix_4 = [[1, 1], [1, 1]];
-
+//------------Tests
 const runTest = (test, index) => {
   const error = assert(test, `Test ${index}: Incorrect Result`);
   if (!error) return `Test ${index}: ${true}`;
