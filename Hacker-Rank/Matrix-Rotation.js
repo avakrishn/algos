@@ -4,6 +4,9 @@ const assert = require('assert');
   Code for Matrix Rotation Hackerrank Problem:
   https://www.hackerrank.com/challenges/matrix-rotation-algo/problem
   Level: Hard
+
+  You are given a 2D matrix of dimension m x n  and a positive integer r. You have to rotate the matrix r times and print the resultant matrix. Rotation should be in anti-clockwise direction.
+
 */
 /*
   Constraints: 
