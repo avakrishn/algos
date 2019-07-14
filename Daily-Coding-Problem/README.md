@@ -42,7 +42,7 @@
 
 - [Problem 18: Sliding Window Max (Google)](#problem-18) **|** [Solution](solutions/problem-018-sliding-window-max.js)
 
-- [Problem 19: ()](#problem-19) **|** [Solution](solutions/problem-019-.js)
+- [Problem 19: Build Different Color Houses (Facebook)](#problem-19) **|** [Solution](solutions/problem-019-build-different-color-houses.js)
 
 - [Problem 20: ()](#problem-20) **|** [Solution](solutions/problem-020-.js)
 
@@ -474,9 +474,27 @@ Do this in O(n) time and O(k) space. You can modify the input array in-place and
 
 ### Problem 19:
 
+> This problem was asked by Facebook.
+
+A builder is looking to build a row of N houses that can be of K different colors. He has a goal of minimizing cost while ensuring that no two neighboring houses are of the same color.
+
+Given an N by K matrix where the nth row and kth column represents the cost to build the nth house with kth color, return the minimum cost which achieves this goal.
+
+> Level: Medium
+
+- [Problem 19 Solution](solutions/problem-019-build-different-color-houses.js)
+
+[[List]](#list)
+
+---
+
+<a name="problem-20"></a>
+
+### Problem 20:
+
 > Level:
 
-- [Problem 19 Solution](solutions/problem-019-.js)
+- [Problem 18 Solution](solutions/problem-020-.js)
 
 [[List]](#list)
 
