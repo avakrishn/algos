@@ -44,6 +44,8 @@
 
 - [Problem 19: ()](#problem-19) **|** [Solution](solutions/problem-019-.js)
 
+- [Problem 20: ()](#problem-20) **|** [Solution](solutions/problem-020-.js)
+
 ## All Problems:
 
 ---
