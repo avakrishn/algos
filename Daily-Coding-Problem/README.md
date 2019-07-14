@@ -44,7 +44,9 @@
 
 - [Problem 19: Build Different Color Houses (Facebook)](#problem-19) **|** [Solution](solutions/problem-019-build-different-color-houses.js)
 
-- [Problem 20: ()](#problem-20) **|** [Solution](solutions/problem-020-.js)
+- [Problem 20: Intersecting Node of 2 Linked Lists (Google)](#problem-20) **|** [Solution](solutions/problem-020-intersecting-node-2-linked-lists.js)
+
+- [Problem 21: ()](#problem-21) **|** [Solution](solutions/problem-021-.js)
 
 ## All Problems:
 
@@ -492,9 +494,31 @@ Given an N by K matrix where the nth row and kth column represents the cost to b
 
 ### Problem 20:
 
+> This problem was asked by Google.
+
+Given two singly linked lists that intersect at some point, find the intersecting node. The lists are non-cyclical.
+
+For example, given A = 3 -> 7 -> 8 -> 10 and B = 99 -> 1 -> 8 -> 10, return the node with value 8.
+
+In this example, assume nodes with the same value are the exact same node objects.
+
+Do this in O(M + N) time (where M and N are the lengths of the lists) and constant space.
+
+> Level: Easy
+
+- [Problem 20 Solution]solutions/problem-020-intersecting-node-2-linked-lists.js)
+
+[[List]](#list)
+
+---
+
+<a name="problem-21"></a>
+
+### Problem 21:
+
 > Level:
 
-- [Problem 18 Solution](solutions/problem-020-.js)
+- [Problem 21 Solution](solutions/problem-021-.js)
 
 [[List]](#list)
 
