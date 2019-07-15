@@ -46,7 +46,9 @@
 
 - [Problem 20: Intersecting Node of 2 Linked Lists (Google)](#problem-20) **|** [Solution](solutions/problem-020-intersecting-node-2-linked-lists.js)
 
-- [Problem 21: ()](#problem-21) **|** [Solution](solutions/problem-021-.js)
+- [Problem 21: Minimum Rooms Required (Snapchat)](#problem-21) **|** [Solution](solutions/problem-021-minimum-rooms-required.js)
+
+- [Problem 22: ()](#problem-22) **|** [Solution](solutions/problem-022-.js)
 
 ## All Problems:
 
@@ -516,9 +518,27 @@ Do this in O(M + N) time (where M and N are the lengths of the lists) and consta
 
 ### Problem 21:
 
+> This problem was asked by Snapchat.
+
+Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
+
+For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
+
+> Level: Easy
+
+- [Problem 21 Solution](solutions/problem-021-minimum-rooms-required.js)
+
+[[List]](#list)
+
+---
+
+<a name="problem-22"></a>
+
+### Problem 22:
+
 > Level:
 
-- [Problem 21 Solution](solutions/problem-021-.js)
+- [Problem 22 Solution](solutions/problem-022-.js)
 
 [[List]](#list)
 
