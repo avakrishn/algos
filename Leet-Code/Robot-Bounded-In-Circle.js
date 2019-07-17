@@ -108,7 +108,7 @@ const assert = require('assert');
  * @param {string} instructions
  * @return {boolean}
  */
-var isRobotBounded = function(instructions) {
+const isRobotBounded = function(instructions) {
   let position = [0, 0];
   let direction = 0; // 0 is north // 1 is east // 2 is south // 3 west
 
