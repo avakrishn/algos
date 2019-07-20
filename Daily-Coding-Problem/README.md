@@ -42,7 +42,13 @@
 
 - [Problem 18: Sliding Window Max (Google)](#problem-18) **|** [Solution](solutions/problem-018-sliding-window-max.js)
 
-- [Problem 19: ()](#problem-19) **|** [Solution](solutions/problem-019-.js)
+- [Problem 19: Build Different Color Houses (Facebook)](#problem-19) **|** [Solution](solutions/problem-019-build-different-color-houses.js)
+
+- [Problem 20: Intersecting Node of 2 Linked Lists (Google)](#problem-20) **|** [Solution](solutions/problem-020-intersecting-node-2-linked-lists.js)
+
+- [Problem 21: Minimum Rooms Required (Snapchat)](#problem-21) **|** [Solution](solutions/problem-021-minimum-rooms-required.js)
+
+- [Problem 22: ()](#problem-22) **|** [Solution](solutions/problem-022-.js)
 
 ## All Problems:
 
@@ -472,9 +478,67 @@ Do this in O(n) time and O(k) space. You can modify the input array in-place and
 
 ### Problem 19:
 
+> This problem was asked by Facebook.
+
+A builder is looking to build a row of N houses that can be of K different colors. He has a goal of minimizing cost while ensuring that no two neighboring houses are of the same color.
+
+Given an N by K matrix where the nth row and kth column represents the cost to build the nth house with kth color, return the minimum cost which achieves this goal.
+
+> Level: Medium
+
+- [Problem 19 Solution](solutions/problem-019-build-different-color-houses.js)
+
+[[List]](#list)
+
+---
+
+<a name="problem-20"></a>
+
+### Problem 20:
+
+> This problem was asked by Google.
+
+Given two singly linked lists that intersect at some point, find the intersecting node. The lists are non-cyclical.
+
+For example, given A = 3 -> 7 -> 8 -> 10 and B = 99 -> 1 -> 8 -> 10, return the node with value 8.
+
+In this example, assume nodes with the same value are the exact same node objects.
+
+Do this in O(M + N) time (where M and N are the lengths of the lists) and constant space.
+
+> Level: Easy
+
+- [Problem 20 Solution]solutions/problem-020-intersecting-node-2-linked-lists.js)
+
+[[List]](#list)
+
+---
+
+<a name="problem-21"></a>
+
+### Problem 21:
+
+> This problem was asked by Snapchat.
+
+Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
+
+For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
+
+> Level: Easy
+
+- [Problem 21 Solution](solutions/problem-021-minimum-rooms-required.js)
+
+[[List]](#list)
+
+---
+
+<a name="problem-22"></a>
+
+### Problem 22:
+
 > Level:
 
-- [Problem 19 Solution](solutions/problem-019-.js)
+- [Problem 22 Solution](solutions/problem-022-.js)
 
 [[List]](#list)
 
