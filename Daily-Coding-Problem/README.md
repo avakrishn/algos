@@ -48,7 +48,9 @@
 
 - [Problem 21: Minimum Rooms Required (Snapchat)](#problem-21) **|** [Solution](solutions/problem-021-minimum-rooms-required.js)
 
-- [Problem 22: ()](#problem-22) **|** [Solution](solutions/problem-022-.js)
+- [Problem 22: Sentence Split (Microsoft)](#problem-22) **|** [Solution](solutions/problem-022-sentence-split.js)
+
+- [Problem 23: ()](#problem-23) **|** [Solution](solutions/problem-023-.js)
 
 ## All Problems:
 
@@ -536,9 +538,29 @@ For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
 
 ### Problem 22:
 
+> This problem was asked by Microsoft.
+
+Given a dictionary of words and a string made up of those words (no spaces), return the original sentence in a list. If there is more than one possible reconstruction, return any of them. If there is no possible reconstruction, then return null.
+
+For example, given the set of words 'quick', 'brown', 'the', 'fox', and the string "thequickbrownfox", you should return ['the', 'quick', 'brown', 'fox'].
+
+Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string "bedbathandbeyond", return either ['bed', 'bath', 'and', 'beyond] or ['bedbath', 'and', 'beyond'].
+
+> Level: Medium
+
+- [Problem 22 Solution](solutions/problem-022-sentence-split.js)
+
+[[List]](#list)
+
+---
+
+<a name="problem-23"></a>
+
+### Problem 23:
+
 > Level:
 
-- [Problem 22 Solution](solutions/problem-022-.js)
+- [Problem 23 Solution](solutions/problem-023-.js)
 
 [[List]](#list)
 
