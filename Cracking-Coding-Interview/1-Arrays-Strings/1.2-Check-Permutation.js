@@ -20,25 +20,27 @@ Given two strings, write a method to decide if one is a permutation of the other
     2. Then compare the two strings to each other
     3. First can check that the length of the strings are equal
     4. Case sensitive
+
+    Time: O(NlogN)
+    Space: O(N)
 */
 
-function isPermutation(str1, str2){
+function isPermutation(str1, str2) {
+  if (str1.length !== str2.length) {
+    return false;
+  }
 
-    if(str1.length !== str2.length){
-        return false;
-    }
-
-    if(sortString(str1) === sortString(str2)){
-        return true;
-    }else{
-        return false;
-    }
+  if (sortString(str1) === sortString(str2)) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-function sortString(str){
-    strArray = str.split(""); // need to include based on what ("") to split the string into an array
-    strArray = strArray.sort();
-    return strArray.join(""); // need to include based on what ("") to join the array into an string
+function sortString(str) {
+  strArray = str.split(''); // need to include based on what ("") to split the string into an array
+  strArray = strArray.sort();
+  return strArray.join(''); // need to include based on what ("") to join the array into an string
 }
 
 //----------------------------Way #2:
@@ -55,51 +57,50 @@ function sortString(str){
     Assuming case sensitive
 */
 
-// O(n)
+//  Time: O(n)
+// Space: O(n)
 
-function isPermutation2(str1, str2){
-    if(str1.length !== str2.length){
-        return false;
+function isPermutation2(str1, str2) {
+  if (str1.length !== str2.length) {
+    return false;
+  }
+  let strObj1 = charCountObject(str1);
+  let strObj2 = charCountObject(str2);
+
+  for (key in strObj1) {
+    if (!strObj2[key] || strObj1[key] !== strObj2[key]) {
+      return false;
     }
-    var strObj1 = charCountObject(str1);
-    var strObj2 = charCountObject(str2);
+  }
 
-    for(key in strObj1){
-        if(!strObj2[key] || strObj1[key] !== strObj2[key]){
-            return false;
-        }
-    }
-
-    return true;
-
+  return true;
 }
 
-function charCountObject(str){
-    charObj = {};
-    for(var i = 0; i < str.length; i++){
-        if(str[i] in charObj){
-            charObj[str[i]]++
-        }else{
-            charObj[str[i]] = 1;
-        }
+function charCountObject(str) {
+  charObj = {};
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] in charObj) {
+      charObj[str[i]]++;
+    } else {
+      charObj[str[i]] = 1;
     }
+  }
 
-    return charObj;
+  return charObj;
 }
-
 
 //--------------------------Tests
 
-console.log("isPermutation:");
-console.log(isPermutation("car", "rac") === true);
-console.log(isPermutation("this old house", "house old this") === true);
-console.log(isPermutation("Car", "rac") === false);
-console.log(isPermutation("car ", "rac") === false);
-console.log(isPermutation("car", "apple") === false);
+console.log('isPermutation:');
+console.log(isPermutation('car', 'rac') === true);
+console.log(isPermutation('this old house', 'house old this') === true);
+console.log(isPermutation('Car', 'rac') === false);
+console.log(isPermutation('car ', 'rac') === false);
+console.log(isPermutation('car', 'apple') === false);
 
-console.log("isPermutation2:");
-console.log(isPermutation2("car", "rac") === true);
-console.log(isPermutation2("this old house", "house old this") === true);
-console.log(isPermutation2("Car", "rac") === false);
-console.log(isPermutation2("car ", "rac") === false);
-console.log(isPermutation2("car", "apple") === false);
+console.log('isPermutation2:');
+console.log(isPermutation2('car', 'rac') === true);
+console.log(isPermutation2('this old house', 'house old this') === true);
+console.log(isPermutation2('Car', 'rac') === false);
+console.log(isPermutation2('car ', 'rac') === false);
+console.log(isPermutation2('car', 'apple') === false);
