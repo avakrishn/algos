@@ -50,7 +50,9 @@
 
 - [Problem 22: Sentence Split (Microsoft)](#problem-22) **|** [Solution](solutions/problem-022-sentence-split.js)
 
-- [Problem 23: ()](#problem-23) **|** [Solution](solutions/problem-023-.js)
+- [Problem 23: Min Steps in Boolean Tree (Google)](#problem-23) **|** [Solution](solutions/problem-023-min-steps-boolean-tree.js)
+
+- [Problem 24: ()](#problem-24) **|** [Solution](solutions/problem-024-.js)
 
 ## All Problems:
 
@@ -558,9 +560,35 @@ Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string
 
 ### Problem 23:
 
+> This problem was asked by Google.
+
+You are given an M by N matrix consisting of booleans that represents a board. Each True boolean represents a wall. Each False boolean represents a tile you can walk on.
+
+Given this matrix, a start coordinate, and an end coordinate, return the minimum number of steps required to reach the end coordinate from the start. If there is no possible path, then return null. You can move up, left, down, and right. You cannot move through walls. You cannot wrap around the edges of the board.
+
+For example, given the following board:
+
+[[f, f, f, f],
+[t, t, f, t],
+[f, f, f, f],
+[f, f, f, f]]
+and start = (3, 0) (bottom left) and end = (0, 0) (top left), the minimum number of steps required to reach the end is 7, since we would need to go through (1, 2) because there is a wall everywhere else on the second row.
+
+> Level: Easy
+
+- [Problem 23 Solution](solutions/problem-023-min-steps-boolean-tree.js)
+
+[[List]](#list)
+
+---
+
+<a name="problem-24"></a>
+
+### Problem 24:
+
 > Level:
 
-- [Problem 23 Solution](solutions/problem-023-.js)
+- [Problem 24 Solution](solutions/problem-024-.js)
 
 [[List]](#list)
 
