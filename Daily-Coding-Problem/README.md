@@ -54,9 +54,9 @@
 
 - [Problem 24: Implement Locking in a Binary Tree (Google)](#problem-24) **|** [Solution](solutions/problem-024-implement-locking-binary-tree.js)
 
-- [Problem 25: (Kth largest element in Linked List)](#problem-25) **|** [Solution](solutions/problem-025-Kth-largest-element-linked-list.mjs)
+- [Problem 25: ()](#problem-25) **|** [Solution](solutions/problem-025-.js)
 
-- [Problem 26: ()](#problem-26) **|** [Solution](solutions/problem-026-.js)
+- [Problem 26: (Kth largest element in Linked List)](#problem-26) **|** [Solution](solutions/problem-026-Kth-largest-element-linked-list.mjs)
 
 ## All Problems:
 
@@ -613,6 +613,18 @@ You may augment the node to add parent pointers or any other property you would 
 
 ### Problem 25:
 
+> Level:
+
+- [Problem 25 Solution](solutions/problem-025-.js)
+
+[[List]](#list)
+
+---
+
+<a name="problem-26"></a>
+
+### Problem 26:
+
 > This problem was asked by Google.
 
 Given a singly linked list and an integer k, remove the kth last element from the list. k is guaranteed to be smaller than the length of the list.
@@ -623,20 +635,7 @@ Do this in constant space and in one pass.
 
 > Level: Medium
 
-- [Problem 25 Solution](solutions/problem-025-Kth-largest-element-linked-list.mjs)
+- [Problem 26 Solution](solutions/problem-026-Kth-largest-element-linked-list.mjs)
 
 [[List]](#list)
 
----
-
-<a name="problem-26"></a>
-
-### Problem 26:
-
-> Level:
-
-- [Problem 26 Solution](solutions/problem-026-.js)
-
-[[List]](#list)
-
----
