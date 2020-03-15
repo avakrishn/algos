@@ -54,7 +54,7 @@
 
 - [Problem 24: Implement Locking in a Binary Tree (Google)](#problem-24) **|** [Solution](solutions/problem-024-implement-locking-binary-tree.js)
 
-- [Problem 25: (Kth largest element in Linked List)](#problem-25) **|** [Solution](solutions/problem-025-Kth-largest-element-linked-list.js)
+- [Problem 25: (Kth largest element in Linked List)](#problem-25) **|** [Solution](solutions/problem-025-Kth-largest-element-linked-list.mjs)
 
 - [Problem 26: ()](#problem-26) **|** [Solution](solutions/problem-026-.js)
 
@@ -623,7 +623,7 @@ Do this in constant space and in one pass.
 
 > Level: Medium
 
-- [Problem 25 Solution](solutions/problem-025-Kth-largest-element-linked-list.js)
+- [Problem 25 Solution](solutions/problem-025-Kth-largest-element-linked-list.mjs)
 
 [[List]](#list)
 
