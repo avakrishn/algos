@@ -48,7 +48,13 @@
 
 - [Problem 21: Minimum Rooms Required (Snapchat)](#problem-21) **|** [Solution](solutions/problem-021-minimum-rooms-required.js)
 
-- [Problem 22: ()](#problem-22) **|** [Solution](solutions/problem-022-.js)
+- [Problem 22: Sentence Split (Microsoft)](#problem-22) **|** [Solution](solutions/problem-022-sentence-split.js)
+
+- [Problem 23: Min Steps in Boolean Tree (Google)](#problem-23) **|** [Solution](solutions/problem-023-min-steps-boolean-tree.js)
+
+- [Problem 24: Implement Locking in a Binary Tree (Google)](#problem-24) **|** [Solution](solutions/problem-024-implement-locking-binary-tree.js)
+
+- [Problem 25: ()](#problem-25) **|** [Solution](solutions/problem-025-.js)
 
 ## All Problems:
 
@@ -536,9 +542,78 @@ For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
 
 ### Problem 22:
 
+> This problem was asked by Microsoft.
+
+Given a dictionary of words and a string made up of those words (no spaces), return the original sentence in a list. If there is more than one possible reconstruction, return any of them. If there is no possible reconstruction, then return null.
+
+For example, given the set of words 'quick', 'brown', 'the', 'fox', and the string "thequickbrownfox", you should return ['the', 'quick', 'brown', 'fox'].
+
+Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string "bedbathandbeyond", return either ['bed', 'bath', 'and', 'beyond] or ['bedbath', 'and', 'beyond'].
+
+> Level: Medium
+
+- [Problem 22 Solution](solutions/problem-022-sentence-split.js)
+
+[[List]](#list)
+
+---
+
+<a name="problem-23"></a>
+
+### Problem 23:
+
+> This problem was asked by Google.
+
+You are given an M by N matrix consisting of booleans that represents a board. Each True boolean represents a wall. Each False boolean represents a tile you can walk on.
+
+Given this matrix, a start coordinate, and an end coordinate, return the minimum number of steps required to reach the end coordinate from the start. If there is no possible path, then return null. You can move up, left, down, and right. You cannot move through walls. You cannot wrap around the edges of the board.
+
+For example, given the following board:
+
+[[f, f, f, f],
+[t, t, f, t],
+[f, f, f, f],
+[f, f, f, f]]
+and start = (3, 0) (bottom left) and end = (0, 0) (top left), the minimum number of steps required to reach the end is 7, since we would need to go through (1, 2) because there is a wall everywhere else on the second row.
+
+> Level: Easy
+
+- [Problem 23 Solution](solutions/problem-023-min-steps-boolean-tree.js)
+
+[[List]](#list)
+
+---
+
+<a name="problem-24"></a>
+
+### Problem 24:
+
+> This problem was asked by Google.
+
+Implement locking in a binary tree. A binary tree node can be locked or unlocked only if all of its descendants or ancestors are not locked.
+
+Design a binary tree node class with the following methods:
+
+is_locked, which returns whether the node is locked
+lock, which attempts to lock the node. If it cannot be locked, then it should return false. Otherwise, it should lock it and return true.
+unlock, which unlocks the node. If it cannot be unlocked, then it should return false. Otherwise, it should unlock it and return true.
+You may augment the node to add parent pointers or any other property you would like. You may assume the class is used in a single-threaded program, so there is no need for actual locks or mutexes. Each method should run in O(h), where h is the height of the tree.
+
+> Level: Medium
+
+- [Problem 24 Solution](solutions/problem-024-implement-locking-binary-tree.js)
+
+[[List]](#list)
+
+---
+
+<a name="problem-25"></a>
+
+### Problem 25:
+
 > Level:
 
-- [Problem 22 Solution](solutions/problem-022-.js)
+- [Problem 25 Solution](solutions/problem-025-.js)
 
 [[List]](#list)
 

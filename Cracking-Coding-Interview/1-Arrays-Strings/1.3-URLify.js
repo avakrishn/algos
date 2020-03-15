@@ -9,17 +9,15 @@
         Output: "Mr%20John%20Smith"
 */
 
-
 //---------------------------Input/ Output
-    /*
+/*
         INPUT: "    Hello, Good     Morning"
         OUTPUT: "Hello,%20Good%20Morning"
     
     */
 
-
 //---------------------------Way #1
-    /*
+/*
         INPUT: "    Hello, Good     Morning"
         1. Trim the string --> "Hello, Good     Morning"
         2. Split the string into an array (strSplit) on " " --> ["Hello,", "Good", "", "", "", "", "", "Morning" ]
@@ -34,20 +32,21 @@
             Assuming: former ("Hi%20There") where should not be consecutive %20's
     */
 
-    //O(n)
+//Time: O(n)
+//Space: O(n)
 
-    function URLify(str){
-        str = str.trim();
-        var strSplit = str.split(" "); // [ 'Hello,', 'Good', '', '', '', '', 'Morning' ]
-        var strArray = [];
-        for(var i = 0; i < strSplit.length; i++){
-            if(strSplit[i] !== ""){
-                strArray.push(strSplit[i]);
-            }
-        }
-        var strJoin = strArray.join("%20"); // "Hello,%20Good%20Morning"
-        return strJoin;
+function URLify(str) {
+  str = str.trim();
+  let strSplit = str.split(' '); // [ 'Hello,', 'Good', '', '', '', '', 'Morning' ]
+  let strArray = [];
+  for (let i = 0; i < strSplit.length; i++) {
+    if (strSplit[i] !== '') {
+      strArray.push(strSplit[i]);
     }
+  }
+  let strJoin = strArray.join('%20'); // "Hello,%20Good%20Morning"
+  return strJoin;
+}
 
 //---------------------------Way #2
 
@@ -63,35 +62,38 @@
     This way only uses one data type (string)
 */
 
-//O(n)
+//Time: O(n)
+// Space: O(n)
 
-function URLify2(str){
-    str = str.trim();
-    var str2 = "";
-    for (var i=0; i<str.length; i++){
-      if (str[i] ===' '){
-        if (str[i-1] !== " "){
-          str2=str2+"%20";
-        }
-      } else {
-        str2=str2+str[i];
+function URLify2(str) {
+  str = str.trim();
+  let str2 = '';
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === ' ') {
+      if (str[i - 1] !== ' ') {
+        str2 = str2 + '%20';
       }
+    } else {
+      str2 = str2 + str[i];
     }
-    return str2;
   }
-
+  return str2;
+}
 
 //--------------------------Tests
 
-console.log("URLify:");
-console.log(URLify("    Hello, Good     Morning") === "Hello,%20Good%20Morning");
-console.log(URLify("  January  ") === "January");
-console.log(URLify("  Another     Test  ") === "Another%20Test");
-console.log(URLify("Mr John Smith ") === "Mr%20John%20Smith");
+console.log('URLify:');
+console.log(
+  URLify('    Hello, Good     Morning') === 'Hello,%20Good%20Morning'
+);
+console.log(URLify('  January  ') === 'January');
+console.log(URLify('  Another     Test  ') === 'Another%20Test');
+console.log(URLify('Mr John Smith ') === 'Mr%20John%20Smith');
 
-console.log("URLify2:");
-console.log(URLify("    Hello, Good     Morning") === "Hello,%20Good%20Morning");
-console.log(URLify("  January  ") === "January");
-console.log(URLify("  Another     Test  ") === "Another%20Test");
-console.log(URLify("Mr John Smith ") === "Mr%20John%20Smith");
-
+console.log('URLify2:');
+console.log(
+  URLify('    Hello, Good     Morning') === 'Hello,%20Good%20Morning'
+);
+console.log(URLify('  January  ') === 'January');
+console.log(URLify('  Another     Test  ') === 'Another%20Test');
+console.log(URLify('Mr John Smith ') === 'Mr%20John%20Smith');
