@@ -1,5 +1,5 @@
-'use strict';
-const assert = require('assert');
+"use strict";
+const assert = require("assert");
 
 //------------------------Problem:
 
@@ -13,25 +13,25 @@ Level:
 //------------------------Constraints and Edge Cases:
 
 /*
-    -
-    -
+  -
+  -
 
 */
 
 //------------------------Inputs and Outputs:
 
 /*
-    Input: 
+  Input: 
 
-    Output: 
+  Output: 
 
-    ---
+  ---
 
-    Input: 
+  Input: 
 
-    Output: 
+  Output: 
 
-    ---
+  ---
 
 */
 
@@ -44,15 +44,15 @@ Level:
 //------------------------CODE:
 
 /*
-    Time: 
-    Space: 
+  Time: 
+  Space: 
 */
 
 //------------------------Modification:
 
 /*
-    Time: 
-    Space: 
+  Time: 
+  Space: 
 */
 
 //------------------------TESTS:
@@ -63,7 +63,7 @@ const runTest = (test, index) => {
   return error;
 };
 
-const testOne = runTest('Placeholder', 1);
+const testOne = runTest("Placeholder", 1);
 
 const testArray = [testOne];
 
