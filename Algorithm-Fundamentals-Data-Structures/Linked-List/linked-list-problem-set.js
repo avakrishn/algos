@@ -407,20 +407,47 @@ class Queue {
     let newNode = new Node(val);
 
     if (!this.first) {
-      this.fist = newNode;
+      this.first = newNode;
     } else {
       let current = this.first;
+      while (current.next) {
+        current = current.next;
+      }
+      current.next = newNode;
     }
   }
 
-  dequeque() {
+  dequeue() {
     // pop from first
+    if (!this.first) return;
+
+    let oldFirst = this.first;
+    this.first = oldFirst.next;
+    oldFirst.next = null;
   }
 
-  peek() {}
+  peek() {
+    return this.first.val;
+  }
 
-  isEmpty() {}
+  isEmpty() {
+    return !this.first;
+  }
 }
+
+console.log("--- Queue ---");
+let queue = new Queue();
+console.log(JSON.stringify(queue));
+console.log(queue.isEmpty());
+queue.dequeue();
+queue.queue(1);
+queue.queue(2);
+queue.queue(3);
+console.log(JSON.stringify(queue));
+queue.dequeue();
+console.log(JSON.stringify(queue));
+console.log(queue.peek());
+console.log(queue.isEmpty());
 
 /*
 Dijkstra’s algorithm finds the shortest path from a start node to any node in a graph. (The graph must be connected, that is, there is a path between any two nodes. The “cost” or “distance” to traverse any edge must be positive).
